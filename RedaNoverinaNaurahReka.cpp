@@ -16,3 +16,8 @@ int x;
 Data *next;
 };
 Data *head;
+int paKosong() {
+if (head == NULL) return 1;
+else return 0;
+}
+
