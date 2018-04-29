@@ -10,7 +10,6 @@ Misal hapusNode(3), artinya menghapus satu Node yang meiliki nilai data=3.*/
 
 #include <iostream>
 #include <stdlib.h>
-
 using namespace std;
 struct Data{
 int x;
