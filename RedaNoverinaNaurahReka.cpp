@@ -9,15 +9,6 @@ Hapus Node tertentu
 Misal hapusNode(3), artinya menghapus satu Node yang meiliki nilai data=3.*/
 
 #include <iostream>
-#include <stdlib.h>
-using namespace std;
-struct Data{
-int x;
-Data *next;
-};
-Data *head;
-int Kosong() {
-if (head == NULL) return 1;
-else return 0;
-}
+#include <conio.h>
+#include <cstdlib>
 
