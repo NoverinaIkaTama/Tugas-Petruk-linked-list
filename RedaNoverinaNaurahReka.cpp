@@ -16,7 +16,7 @@ int x;
 Data *next;
 };
 Data *head;
-int paKosong() {
+int Kosong() {
 if (head == NULL) return 1;
 else return 0;
 }
