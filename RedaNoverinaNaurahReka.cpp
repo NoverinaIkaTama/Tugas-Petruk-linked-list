@@ -13,10 +13,7 @@ Misal hapusNode(3), artinya menghapus satu Node yang meiliki nilai data=3.*/
 
 using namespace std;
 struct Data{
-
-class Node
-{
-public:
-    Node* next;
-    int data;
+int x;
+Data *next;
 };
+Data *head;
