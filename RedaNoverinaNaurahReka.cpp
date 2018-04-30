@@ -11,4 +11,9 @@ Misal hapusNode(3), artinya menghapus satu Node yang meiliki nilai data=3.*/
 #include <iostream>
 #include <conio.h>
 #include <cstdlib>
+class Node{
+public:
+    Node* next;
+    int data;
+};
 
