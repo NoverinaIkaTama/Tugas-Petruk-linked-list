@@ -164,7 +164,7 @@ int main () {
         cout<<" 1. Noverina Ika Tama                 1717051005"<<endl;
         cout<<" 2. Naurah Nazhifah                   1717051032"<<endl;
         cout<<" 3. Reka Amelia                       1717051046"<<endl;
-        cout<<" 4. Reda Meiningtiyas                 1717051059"<<endl
+        cout<<" 4. Reda Meiningtiyas                 1717051055"<<endl
         cout<<"   *******************************************************************************************************"<<endl;
         cout<<"             (1) Masukan Data         ="<<endl;
         cout<<"             (2) Insert Depan         ="<<endl;
@@ -180,7 +180,7 @@ int main () {
         cin>>pil;
         switch (pil)
         {
- case 1: system("CLS");{
+                case 1: system("CLS");{
                 cout<<"Masukkan Data = ";
                 cin>>databaru;
                 insertDepan(databaru);
@@ -192,9 +192,21 @@ int main () {
                 insertDepan(databaru);
                 break;
             }
-            case 3: system("cls");{
+                case 3: system("cls");{
                 cout<<"Masukkan Data = ";
                 cin>>databaru;
                 insertBelakang(databaru);
+                break;
+            }
+                case 4: system("cls");{
+                hapusDepan();
+                break;
+            }
+            case 5: system("cls");{
+                hapusBelakang();
+                break;
+            }
+            case 6: system("cls");{
+                tampil();
                 break;
             }
