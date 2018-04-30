@@ -149,3 +149,34 @@ void clear()
         head = NULL;
       cout<<"CLEAR";
 }
+int main () {
+ 
+     int pil,databaru,posisi;
+
+    do
+    {
+     
+        system("cls");
+        cout<<endl<<endl;
+        cout<<"   *******************************************************************************************************"<<endl;
+        cout<<"   =                                         SIMPLE LINKED LIST                                          ="<<endl<<endl;
+        cout<<" Anggota : "<<endl;
+        cout<<" 1. Noverina Ika Tama                 1717051005"<<endl;
+        cout<<" 2. Naurah                            1717051032"<<endl;
+        cout<<" 3. Reka Amelia                       1717051046"<<endl;
+        cout<<" 4. Reda Meiningtiyas                 1717051059"<<endl
+        cout<<"   *******************************************************************************************************"<<endl;
+        cout<<"             (1) Masukan Data         ="<<endl;
+        cout<<"             (2) Insert Depan         ="<<endl;
+        cout<<"             (3) Insert Belakang      ="<<endl;
+        cout<<"             (4) Delete Depan         ="<<endl;
+        cout<<"             (5) Delete Belakang      ="<<endl;
+        cout<<"             (6) Tampil Data          ="<<endl;
+        cout<<"             (7) Sisip Data           ="<<endl;
+        cout<<"             (8) Clear                ="<<endl;
+        cout<<"             (9) Exit                 ="<<endl;
+        cout<<"   *******************************************************************************************************"<<endl;
+        cout<<"   Masukan Pilihan : "; 
+        cin>>pil;
+        switch (pil)
+        {
