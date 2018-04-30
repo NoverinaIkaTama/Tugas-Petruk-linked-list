@@ -215,8 +215,10 @@ int main () {
                 break;
             }
             	case 7: system("cls");{
-            	cout<<" Masukkan Data: "; cin>>databaru;
-            	cout<<" Masukkan posisi data yang ingin ditambahkan: "; cin>>posisi;
+            	cout<<" Masukkan Data: "; 
+		cin>>databaru;
+            	cout<<" Masukkan posisi data yang ingin ditambahkan: "; 
+		cin>>posisi;
             	sisipdata(databaru,posisi);
             	cout<<endl;
             	break;
@@ -233,10 +235,10 @@ int main () {
             	return 0;
 		break;
 			}
-            default : system("cls");{
+            default : system("cls");
+	    {
             cout<<"\n Maaf, Pilihan yang anda pilih tidak tersedia!";
             }
-
         }
         getch();
     }
