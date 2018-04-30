@@ -49,3 +49,19 @@ void insertDepan(int databaru){
   }
 cout<<"Data masuk\n";
 } 
+void insertBelakang(int databaru){
+ TNode *baru,*bantu;
+ baru = new TNode;
+ baru->data = databaru;
+ baru->next = NULL;
+ if(isEmpty()==1){
+ head=baru;
+ tail=baru;
+ tail->next = NULL;
+ }
+ else {
+  tail->next = baru;
+  tail=baru;
+ }
+ cout<<"Data masuk\n";
+}
