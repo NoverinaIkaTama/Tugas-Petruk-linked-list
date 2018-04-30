@@ -49,7 +49,8 @@ void insertDepan(int databaru){
   }
 cout<<"Data masuk\n";
 } 
-void insertBelakang(int databaru){
+void insertBelakang(int databaru)
+{
  TNode *baru,*bantu;
  baru = new TNode;
  baru->data = databaru;
@@ -58,14 +59,16 @@ void insertBelakang(int databaru){
  head=baru;
  tail=baru;
  tail->next = NULL;
- }
- else {
-  tail->next = baru;
-  tail=baru;
+}
+ else 
+ {
+ tail->next = baru;
+ tail=baru;
  }
  cout<<"Data masuk\n";
 }
-void tampil(){
+void tampil()
+{
  TNode *bantu;
  bantu = head;
      if(isEmpty()==0){
@@ -73,9 +76,9 @@ void tampil(){
            cout<<bantu->data<<" ";
            bantu=bantu->next;
           }
-     } else 
-   cout<<"Masih kosong\n";
-  }
+      }else 
+       cout<<"Masih kosong\n";
+}
 void hapusDepan(){
      TNode *hapus;
      int d;
@@ -89,8 +92,8 @@ void hapusDepan(){
            d = tail->data;
            head=tail=NULL;
           }
-   cout<<d<<"terhapus";
-     } else cout<<"Masih kosong\n";
+          cout<<d<<"terhapus";
+          } else cout<<"Masih kosong\n";
 }
 void hapusBelakang(){
      TNode *bantu,*hapus;
@@ -106,15 +109,16 @@ void hapusBelakang(){
                d = hapus->data;
                delete hapus;
                tail->next = NULL;
-            }else {
-            d = tail->data;
-             head=tail=NULL;
-            }
-      cout<<d<<" terhapus\n";
-     } else cout<<"Masih kosong\n";
+               }else {
+               d = tail->data;
+               head=tail=NULL;
+               }
+          cout<<d<<" terhapus\n";
+          } else cout<<"Masih kosong\n";
 }
 
-void sisipdata(int databaru, int posisi){
+void sisipdata(int databaru, int posisi)
+{
     TNode *baru, *bantu;
     if (head!=NULL){
      baru=new TNode;
@@ -129,11 +133,11 @@ void sisipdata(int databaru, int posisi){
     baru->data = databaru;
     baru->next = bantu->next;
     bantu->next = baru;
-}
-else
-{
- cout<<"Belum ada data !! silahkan isi data dulu...";
-}
+    }
+    else
+    {
+    cout<<"Belum ada data !! silahkan isi data dulu...";
+    }
 }
 
 void clear()
@@ -147,7 +151,7 @@ void clear()
             delete hapus;
         }
         head = NULL;
-      cout<<"CLEAR";
+        cout<<"CLEAR";
 }
 int main () {
  
@@ -238,5 +242,5 @@ int main () {
     }
     while(pil!=8);
  
-    return 0;
+  return 0;
 }
