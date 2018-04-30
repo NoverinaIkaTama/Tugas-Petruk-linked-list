@@ -113,3 +113,39 @@ void hapusBelakang(){
       cout<<d<<" terhapus\n";
      } else cout<<"Masih kosong\n";
 }
+
+void sisipdata(int databaru, int posisi){
+    TNode *baru, *bantu;
+    if (head!=NULL){
+     baru=new TNode;
+     bantu=head;
+    for (int i = 1;i < posisi-1;i++)
+    {
+            if (bantu->next != NULL)
+            bantu = bantu->next;
+            else
+            break;
+    }
+    baru->data = databaru;
+    baru->next = bantu->next;
+    bantu->next = baru;
+}
+else
+{
+ cout<<"Belum ada data !! silahkan isi data dulu...";
+}
+}
+
+void clear()
+{
+        TNode *bantu,*hapus;
+        bantu = head;
+        while(bantu!=NULL)
+        {
+            hapus = bantu;
+            bantu = bantu->next;
+            delete hapus;
+        }
+        head = NULL;
+      cout<<"CLEAR";
+}
