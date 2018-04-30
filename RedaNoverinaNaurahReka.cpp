@@ -180,3 +180,9 @@ int main () {
         cin>>pil;
         switch (pil)
         {
+ case 1: system("CLS");{
+                cout<<"Masukkan Data = ";
+                cin>>databaru;
+                insertDepan(databaru);
+                break;
+            }
