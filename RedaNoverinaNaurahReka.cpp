@@ -162,7 +162,7 @@ int main () {
         cout<<"   =                                         SIMPLE LINKED LIST                                          ="<<endl<<endl;
         cout<<" Anggota : "<<endl;
         cout<<" 1. Noverina Ika Tama                 1717051005"<<endl;
-        cout<<" 2. Naurah                            1717051032"<<endl;
+        cout<<" 2. Naurah Nazhifah                   1717051032"<<endl;
         cout<<" 3. Reka Amelia                       1717051046"<<endl;
         cout<<" 4. Reda Meiningtiyas                 1717051059"<<endl
         cout<<"   *******************************************************************************************************"<<endl;
@@ -184,5 +184,17 @@ int main () {
                 cout<<"Masukkan Data = ";
                 cin>>databaru;
                 insertDepan(databaru);
+                break;
+            }
+                case 2: system("cls");{
+                cout<<"Masukkan Data = ";
+                cin>>databaru;
+                insertDepan(databaru);
+                break;
+            }
+            case 3: system("cls");{
+                cout<<"Masukkan Data = ";
+                cin>>databaru;
+                insertBelakang(databaru);
                 break;
             }
