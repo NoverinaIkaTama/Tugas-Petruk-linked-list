@@ -17,3 +17,18 @@ public:
     int data;
 };
 
+using namespace std;
+struct TNode{
+    int data;
+    TNode *next;
+};
+TNode *head, *tail;
+
+void init(){
+    head = NULL;
+    tail = NULL;
+}
+int isEmpty(){
+ if(tail == NULL) return 1;
+ else return 0;
+}
