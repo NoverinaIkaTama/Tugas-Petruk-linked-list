@@ -221,3 +221,22 @@ int main () {
             clear();
             break;
             }
+case 9: {
+            return 0;
+             break;
+            }
+            case 10: {
+            return 0;
+			break;
+			}
+            default : system("cls");{
+            cout<<"\n Maaf, Pilihan yang anda pilih tidak tersedia!";
+            }
+
+        }
+        getch();
+    }
+    while(pil!=8);
+ 
+    return 0;
+}
