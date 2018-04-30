@@ -202,32 +202,32 @@ int main () {
                 hapusDepan();
                 break;
             }
-            case 5: system("cls");{
+            	case 5: system("cls");{
                 hapusBelakang();
                 break;
             }
-            case 6: system("cls");{
+            	case 6: system("cls");{
                 tampil();
                 break;
             }
-            case 7: system("cls");{
-            cout<<" Masukkan Data: "; cin>>databaru;
-            cout<<" Masukkan posisi data yang ingin ditambahkan: "; cin>>posisi;
-            sisipdata(databaru,posisi);
-            cout<<endl;
-            break;
+            	case 7: system("cls");{
+            	cout<<" Masukkan Data: "; cin>>databaru;
+            	cout<<" Masukkan posisi data yang ingin ditambahkan: "; cin>>posisi;
+            	sisipdata(databaru,posisi);
+            	cout<<endl;
+            	break;
             }
-            case 8: system("cls");{
-            clear();
-            break;
+            	case 8: system("cls");{
+            	clear();
+            	break;
             }
-case 9: {
-            return 0;
-             break;
+		case 9: {
+            	return 0;
+             	break;
             }
-            case 10: {
-            return 0;
-			break;
+            	case 10: {
+            	return 0;
+		break;
 			}
             default : system("cls");{
             cout<<"\n Maaf, Pilihan yang anda pilih tidak tersedia!";
