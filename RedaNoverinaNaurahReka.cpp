@@ -164,7 +164,7 @@ int main () {
         cout<<" 1. Noverina Ika Tama                 1717051005"<<endl;
         cout<<" 2. Naurah Nazhifah                   1717051032"<<endl;
         cout<<" 3. Reka Amelia                       1717051046"<<endl;
-        cout<<" 4. Reda Meiningtiyas                 1717051055"<<endl
+        cout<<" 4. Reda Meiningtiyas                 1717051055"<<endl;
         cout<<"   *******************************************************************************************************"<<endl;
         cout<<"             (1) Masukan Data         ="<<endl;
         cout<<"             (2) Insert Depan         ="<<endl;
@@ -209,4 +209,15 @@ int main () {
             case 6: system("cls");{
                 tampil();
                 break;
+            }
+            case 7: system("cls");{
+            cout<<" Masukkan Data: "; cin>>databaru;
+            cout<<" Masukkan posisi data yang ingin ditambahkan: "; cin>>posisi;
+            sisipdata(databaru,posisi);
+            cout<<endl;
+            break;
+            }
+            case 8: system("cls");{
+            clear();
+            break;
             }
