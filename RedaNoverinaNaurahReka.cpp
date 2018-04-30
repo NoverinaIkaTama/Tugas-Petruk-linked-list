@@ -65,6 +65,17 @@ void insertBelakang(int databaru){
  }
  cout<<"Data masuk\n";
 }
+void tampil(){
+ TNode *bantu;
+ bantu = head;
+     if(isEmpty()==0){
+          while(bantu!=NULL){
+           cout<<bantu->data<<" ";
+           bantu=bantu->next;
+          }
+     } else 
+   cout<<"Masih kosong\n";
+  }
 void hapusDepan(){
      TNode *hapus;
      int d;
