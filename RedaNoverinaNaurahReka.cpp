@@ -65,3 +65,19 @@ void insertBelakang(int databaru){
  }
  cout<<"Data masuk\n";
 }
+void hapusDepan(){
+     TNode *hapus;
+     int d;
+     if (isEmpty()==0){
+          if(head!=tail){
+           hapus = head;
+           d = hapus->data;
+           head = head->next;
+           delete hapus;
+          } else {
+           d = tail->data;
+           head=tail=NULL;
+          }
+   cout<<d<<"terhapus";
+     } else cout<<"Masih kosong\n";
+}
